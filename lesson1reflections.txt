@@ -1,0 +1,100 @@
+Reflection:
+
+To find differences between two files:
+Windows: 
+FC old_file new_file
+
+Mac and Linux:
+diff old_file new_file
+
+ /E:/udemy/VersionControl
+
+ echo 'alias sublime="C:/Program\ Files\ \(x86\)/Sublime\ Text\ 3/sublime_text.exe"' >> ~/.bashrc
+
+
+git config --global core.editor "'C:/Program\ Files\ \(x86\)/Sublime\ Text\ 3/sublime_text.exe' -n -w"
+
+
+ Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+ A: I could see that two lines were different and there I could see that
+ the word should have been spelled "space" rather than "spacr"
+
+
+ Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+ A: If I have easy access to the entire history of a file then I can go back to the last working file, in case I get bugs
+
+
+
+
+ One Commit per Logical Change Solution
+
+You commit all the changes required to add a new feature, which you’ve been working on for a week. You haven’t committed since you started working on it.
+
+This commit seems too big. It's easier to understand what each commit does if each only does one thing and is fairly small. Going a week without committing is not the best idea.
+
+You found three typos in your README. You fix and commit the first.
+
+This commit seems too small. It would be better to fix all three typos, then commit. That way, your history won't get too cluttered with typo fixes. Plus, you don’t need to worry about introducing bugs to a README, so bundling changes together is more likely to be a good idea.
+
+You commit all the changes required to add a new feature, which you’ve been working on for an hour.
+
+This is probably a good size for a commit. All the work is on a single feature, so the commit will have a clear logical purpose. After an hour, the diff will probably have a fair amount of content in it, but not too much to understand.
+
+On the other hand, sometimes after working for an hour you’ll have run into more than one natural committing point, in which case you would want to break the feature up into smaller commits. Because of this, “too big” could also be a reasonable answer here.
+
+You fix two small bugs in different functions and commit them both at once.
+
+This commit is probably too big. It would have been better to commit after the first bug fix, since the two bug fixes aren't related to each other.
+
+Judgment Call
+
+Choosing when to commit is a judgment call, and it's not always cut-and-dried. When choosing whether to commit, just keep in mind that each commit should have one clear, logical purpose, and you should never do too much work without committing.
+
+
+
+
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+
+A:
+Manually saving:
+Pros: I can decide what is the good time to commit. This will give me greater control over my code and changes.
+
+Cons: This may involve human error as I might forget to commit at all.
+
+Auto saving:
+pros: I don't have to worry about saving the file everytime.
+cons: It may create unnecessary versions where even a minor punctuation change is also saved as different version.
+
+
+
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+A: git is more geared towards programmers. In real world programming we 
+might need to change multiple files which are dependent on each other.
+So, in order to view if I made proper changes to all the dependent files,
+I can use diff.
+Google Docs is a platform to edit and save documents online. It doesn't take into consideration that two files may be inter-dependent. So it doesn't allow saving multiple files in one commit.
+
+
+Q: How can you use the commands git log and git diff to view the history of files?
+
+A: git log command gives the list of all the commits made to the file with 
+a unique id.
+we can compare two commit ids to see the difference between those two committed files.
+
+
+Q: How might using version control make you more confident to make changes that could break something?
+
+A: Using version control I'll be more confident of making changes because
+I know that I have previous working code saved by git, so I can use it whenever my code gets any bug.
+
+
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+
+A: I want to use Git to control different versions of codes I'll write.
+
