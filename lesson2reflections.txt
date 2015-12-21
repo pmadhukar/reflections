@@ -14,3 +14,7 @@ It is different from the working directory because we are putting files from wor
 It is different from the repository because files will be committed from staging area to the repostitory.
 
 
+Q: How do the diagrams help you visualize the branch structure?
+A:
+Diagrams help me visualize the exact pattern how the commits move. It helps me understand the entire structure, so that I understand
+how to commit each change and not lose it.
