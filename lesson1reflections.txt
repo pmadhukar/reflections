@@ -12,7 +12,10 @@ diff old_file new_file
  echo 'alias sublime="C:/Program\ Files\ \(x86\)/Sublime\ Text\ 3/sublime_text.exe"' >> ~/.bashrc
 
 
-git config --global core.editor "'C:/Program\ Files\ \(x86\)/Sublime\ Text\ 3/sublime_text.exe' -n -w"
+git config --global core.editor "'C:/Program\ Files\ \(x86\)/Sublime\ Text\ 3/subl.exe' -n -w"
+
+git config --global core.editor \ "'C:\Program Files (x86)\Sublime Text 3' -n -w"
+
 
 
  Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
