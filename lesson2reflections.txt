@@ -14,3 +14,19 @@ It is different from the working directory because we are putting files from wor
 It is different from the repository because files will be committed from staging area to the repostitory.
 
 
+Q: How do the diagrams help you visualize the branch structure?
+A:
+Diagrams help me visualize the exact pattern how the commits move. It helps me understand the entire structure, so that I understand
+how to commit each change and not lose it.
+
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A:
+Merging two branches together merges all the changes. We represent in the diagram the way we do because merging will
+contain all the commits made in these two branches. So we can go back to any previous commit made.
+Also the diagram represents exact logical visualization of merging.
+
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A:
+
