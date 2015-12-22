@@ -6,3 +6,11 @@ A: I would use remote repository in following situations:
 
 Q: Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 A: I would want to pull changes manually because I want to decide when changes are ready to by synchronized.
+
+
+Q: Describe the differences between forks, clones, and branches. When would you use one instead of another?
+A:
+fork: used to get a copy of an online repository, hosted on github to our github account.
+clone: used to get a copy of an online/remote repository to our local system.
+branch: used to get a copy from master branch, so that we can introduce changes without affecting the master.
+
