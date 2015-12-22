@@ -25,3 +25,7 @@ A:
 Merging two branches together merges all the changes. We represent in the diagram the way we do because merging will
 contain all the commits made in these two branches. So we can go back to any previous commit made.
 Also the diagram represents exact logical visualization of merging.
+
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A:
